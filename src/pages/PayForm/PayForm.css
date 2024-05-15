@@ -1,0 +1,103 @@
+.pay-form__main{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-height: calc(100vh - 6rem);
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
+    padding: 2rem 1rem;
+}
+
+.pay-form__heading{
+    font-size: 2rem;    
+    font-weight: 700;
+    color: var(--text-color-1);
+}
+
+.pay-form__form-container{
+    width: 100%;
+    border: 1px solid var(--outline-color-3);
+    box-shadow: 5px 5px var(--outline-color-3);
+}
+
+.pay-form__dropdown-content{
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pay-form__double-input-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.pay-form__input-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+
+.pay-form__credit-card-credentials{
+    padding: 2rem;
+}
+
+.pay-form__credit-card-credentials__heading{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color-1);
+    margin-bottom: 1rem;
+}
+
+.pay-form__summary{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 2rem;
+}
+
+.pay-form__summary-heading{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color-1);
+}
+
+.pay-form__summary-credentials-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 1rem;
+}
+
+.pay-form__summary-list{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.pay-form__summary-list-item{
+    font-size: 1rem;
+    color: var(--text-color-1);
+    font-weight: 500;
+}
+
+.pay-form__cart-products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.pay-form__checkbox-container{
+    width: 100%;
+    margin-top: 2.5rem;
+}

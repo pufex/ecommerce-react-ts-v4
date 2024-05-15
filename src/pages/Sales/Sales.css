@@ -1,0 +1,118 @@
+.sales__main{
+    min-height: calc(100vh - 6rem);
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-block: 2rem;
+}
+
+.sales__header{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sales__heading{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color-1);
+}
+
+.sales__partner{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color-1);
+}
+
+.sales__location{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sales__location-icon,
+.sales__location-name{
+    color: var(--text-color-1);
+    font-size: 1.5rem;
+}
+
+.sales__options{
+    width: 100%;
+    max-width: 1200px;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+}
+
+.sales__products-header{
+    width: 100%;
+    padding-inline: 2rem;
+    display: grid;
+    place-items: center;
+}
+
+.sales__products{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.sales__pagination-buttons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 30px;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+    padding-inline: 2rem;
+}
+
+.btn--paginate{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 3.5rem;
+    background-color: var(--element-color-1);
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text-color-1);
+    border: 1px solid var(--outline-color-2) !important;
+    box-shadow: 0 0 6px var(--outline-color-2);
+    transition: 300ms transform linear;
+}
+
+.btn--paginate:hover{
+    transform: scale(1.05);
+    filter: brightness(1.05)
+}
+
+.btn--paginate:active{
+    transition: 30ms transform linear;
+    transform: scale(.95);
+    filter: brightness(1.25)
+}
+
+.btn--paginate-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-color-1);
+}
+
+@media (min-width: 750px){
+    .sales__products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-inline: auto;
+        max-width: 1200px;
+    }
+}

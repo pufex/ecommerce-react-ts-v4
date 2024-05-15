@@ -1,0 +1,15 @@
+.profile-bubble__container{
+    position: relative;
+}
+
+.profile-bubble{
+    height: 3rem;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    border: 5px solid var(--outline-color-5);
+    background-color: var(--skeleton-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}

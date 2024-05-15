@@ -1,0 +1,28 @@
+.loading-page__container{
+    width: 100%;
+    min-height: calc(100vh - 6rem);
+    display: grid;
+    place-items: center;
+    background-color: var(--background-color);
+}
+
+.loading-page__loading-container{
+    height: 1rem;
+    aspect-ratio: 1;
+    position: relative;
+}
+
+.loading-page__loading-itself{
+    color: var(--text-color-1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotate(0deg);
+    animation: loadingAnimation 2000ms linear infinite;
+}
+
+@keyframes loadingAnimation {
+    to{
+        transform: rotate(360deg);
+    }
+}

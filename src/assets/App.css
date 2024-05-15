@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 16px;
+    min-width: 0;
+}
+
+body, html, #root{
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body{
+    --inset-shadow-color: rgba(0, 0, 0, 0.468);
+    --skeleton-color: hsl(0, 0%, 50%);
+}
+
+body.light{
+    --background-color: hsl(240, 100%, 97%);
+    --element-color-1: hsl(47, 100%, 50%);
+    --element-color-2: hsl(47, 100%, 75%);
+    --element-color-3: hsl(0, 0%, 100%);
+    --element-color-4: hsl(47, 100%, 87%);
+    --text-color-1: hsl(240, 100%, 9%); 
+    --outline-color-1: hsla(240, 100%, 5%, 0.714);
+    --outline-color-2: hsla(60, 100%, 30%, 0.337);
+    --outline-color-3: hsla(240, 100%, 8%, 0.193);
+    --outline-color-4: hsla(348, 100%, 16%, 0.502);
+    --outline-color-5: hsl(47, 100%, 75%);
+    --creative-color-1: hsl(240, 100%, 19%);
+    --link-color: hsl(240, 100%, 50%);
+    --error-color: hsl(348, 100%, 37%);
+}
+
+body.dark{
+    --background-color: hsl(240, 19%, 15%);
+    --element-color-1: hsl(240, 26%, 31%);
+    --element-color-2: hsl(240, 40%, 31%);
+    --element-color-3: hsl(240, 17%, 19%);
+    --element-color-4: hsl(237, 15%, 29%);
+    --text-color-1: hsl(0, 0%, 100%); 
+    --outline-color-1: hsla(240, 100%, 5%, 0.714);
+    --outline-color-2: hsla(249, 100%, 18%, 0.337);
+    --outline-color-3: hsla(240, 100%, 8%, 0.193);
+    --outline-color-4: hsla(348, 100%, 16%, 0.502);
+    --outline-color-5: hsl(240, 40%, 31%);
+    --creative-color-1: hsl(0, 0%, 100%);
+    --link-color: hsl(60, 100%, 50%);
+    --error-color: hsl(348, 100%, 66%);
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+.btn{
+    appearance: none;
+    outline: none;
+    border: none;
+    user-select: none;
+    text-decoration: none;
+    cursor: pointer;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.btn--primary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: var(--element-color-1);
+    height: 3.5rem;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    color: var(--text-color-1);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    text-wrap: nowrap;
+    border: 1px solid var(--_inset-shadow-color);
+    box-shadow: 0 0 12px var(--_inset-shadow-color);
+    transition: 50ms transform linear;
+}
+
+.btn--primary:hover{
+    filter: brightness(1.025);
+}
+
+.btn--primary:active{
+    filter: brightness(.975);
+    transform: scale(0.975);
+    box-shadow: 
+        inset -2px 2px 6px var(--_inset-shadow-color),
+        0 0 6px var(--_inset-shadow-color);
+}
+
+.btn--link-like{
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.form__input-container{
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.form__double-input{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.form__submit-container{
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.form__submit-container-2{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.form__input-and-2-buttons{
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 120px 120px;
+    align-items: end;
+}
+
+.form__input-and-2-buttons > .button{
+    height: 2.5rem;
+}
+
+.link{
+    text-decoration: none;
+    color: var(--link-color);
+    font-weight: 600;
+    text-align: center;
+}
+
+.link:hover{
+    filter: saturate(1.25)
+}

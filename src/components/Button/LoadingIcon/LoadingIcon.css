@@ -1,0 +1,23 @@
+.button--loading-icon__container{
+    position: relative;
+    height: 2.5rem;
+    aspect-ratio: 1;
+}
+
+.button--loading-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-color-1);
+    animation: loadingAnimation 2000ms linear 0ms infinite;
+}
+
+@keyframes loadingAnimation {
+    from{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

@@ -1,0 +1,40 @@
+.error__main{
+    padding-inline: 2rem;
+    min-height: calc(100vh - 6rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.error__info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.error__heading{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color-1);
+}
+
+.error__description{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: var(--text-color-1);
+    max-width: 30ch;
+}
+
+.error__link{
+    font: inherit;
+    font-weight: 600;
+    color: var(--link-color);
+}
+
+.error__icon{
+    color: var(--text-color-1);
+}
+

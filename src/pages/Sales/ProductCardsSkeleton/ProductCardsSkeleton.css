@@ -1,0 +1,16 @@
+.product-card__skeleton{
+    min-height: 350px;
+    background-color: lightgray;
+    border-radius: 5px;
+    animation: skeletonLoading 2000ms linear 0ms infinite;
+}
+
+@keyframes skeletonLoading{
+    0%{
+        background-color: lightgray;
+    }50%{
+        background-color: gray;
+    }100%{
+        background-color: lightgray;
+    }
+}

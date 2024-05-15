@@ -1,0 +1,28 @@
+.search{
+    width: 100%;
+    height: 3.5rem;
+    background-color: white;
+    border: 2px solid var(--outline-color-3);
+    box-shadow: 0 0 3px var(--outline-color-3);
+    outline: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-inline: 1rem;
+}
+
+.search__component-icon{
+    flex-shrink: 0;
+}
+
+.search__input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-color-2);
+}

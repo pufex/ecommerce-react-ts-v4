@@ -1,0 +1,35 @@
+.form-component{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-component__header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.form-component__heading{
+    padding-block: 1rem;
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: var(--text-color-1);
+}
+
+.form-component__content{
+    width: 100%;
+}
+
+.form-component__error-message{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--error-color);
+    font-weight: 700;
+    padding-block: 1rem;
+}

@@ -1,0 +1,40 @@
+.conclusion__main{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.conclusion__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.conclusion__heading{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.conclusion__heading-content{
+    font-size: 2.5rem;
+    color: var(--text-color-1);
+    font-weight: 600;
+}
+
+.conclusion__icon{
+    color: var(--text-color-1);
+}
+
+.conclusion__information{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-color-1);
+}
+
+.conclusion__link{
+    font: inherit;
+    color: var(--link-color);
+}

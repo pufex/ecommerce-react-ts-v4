@@ -1,0 +1,75 @@
+.carousel-container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-container::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn--carousel{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 3rem;
+    aspect-ratio: 1;
+    background-color: var(--element-color-1);
+    border-radius: 100%;
+    border: 1px solid var(--outline-color-2);
+    box-shadow: 0 0 12px var(--outline-color-2);
+    transition: 300ms transform linear;
+    z-index: 3;
+}
+
+.btn--carousel:hover{
+    transform: translateY(-50%) scale(1.05);
+}
+
+.btn--carousel:active{
+    transition: 30ms transform linear;
+    box-shadow: 
+        inset 0px 0px 4px 2px var(--outline-color-2),
+        0 0 12px var(--outline-color-2);
+    transform: translateY(-50%) scale(.95);
+}
+
+.btn--carousel-left{
+    left: 10px;
+}
+
+.btn--carousel-right{
+    right: 10px;
+}
+
+.btn--carousel-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-color-1)
+}
+
+.carousel__photos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+.carousel__photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    flex-shrink: 0;
+    transition: 300ms transform linear;
+    background-color: white;
+}

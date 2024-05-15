@@ -1,0 +1,147 @@
+.nav__imposter{
+    height: 6rem;
+    width: 100%;
+}
+
+.nav__container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 6rem;
+    border-bottom: 1px solid var(--outline-color-1);
+    box-shadow: 0 0 6px var(--outline-color-1);
+    background-color: var(--element-color-1);
+}
+
+.nav{
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0.25rem 1rem;
+}
+
+.nav__section{
+    display: flex;
+    align-items: center;
+}
+
+.nav--left{
+    gap: 1rem;
+    cursor: pointer;
+    height: 100%;
+}
+
+.nav__logo-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav__logo-container{
+    height: 3rem;
+    aspect-ratio: 1;
+    position: relative;
+}
+
+.nav__logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-color-1);
+}
+
+.nav__logo-title{
+    color: var(--text-color-1);
+    font-family: "Balsamiq Sans", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.nav--right{
+    gap: 1.75rem;
+}
+
+.nav__links{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.nav__link{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--text-color-1);
+    font-weight: 500;
+}
+
+.nav__link:hover{
+    filter: brightness(4)
+}
+
+.nav__link:active, .nav__link.active{
+    filter: brightness(6)
+}
+
+.hamburger{
+    position: relative;
+    height: 3rem;
+    aspect-ratio: 1;
+    background-color: transparent;
+}
+
+.hamburger__icon{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-color-1);
+}
+
+.cart{
+    position: relative;
+    height: 3rem;
+    aspect-ratio: 1;
+    text-decoration: none;
+}
+
+.cart__icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-color-1);
+}
+
+.cart__items-number-container{
+    height: 22px;
+    aspect-ratio: 1;
+    background-color: blue;
+    border-radius: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(50%, 50%);
+}
+
+.cart__items-number{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+}
+
+@media (max-width: 700px){
+    .nav--right{
+        gap: 1rem;
+    }
+}

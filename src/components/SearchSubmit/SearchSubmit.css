@@ -1,0 +1,52 @@
+.ss__form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 1rem;
+}
+
+.ss__input-container{
+    height: 3rem;
+    width: 100%;
+    padding-inline: 1rem;
+    background-color: var(--element-color-3);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid var(--outline-color-1)
+}
+
+.ss__input-container:focus-within{
+    border: 2px solid var(--element-color-1);
+}
+
+.ss__search-input{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-color-1);
+    font-weight: 500;
+}
+
+.ss__button{
+    position: relative;
+    height: 100%;
+    aspect-ratio: 1;
+    background-color: transparent;
+}
+
+.ss__icon{
+    color: var(--text-color-1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ss__search-icon{
+    cursor: text;
+}

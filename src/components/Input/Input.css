@@ -1,0 +1,82 @@
+.input__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.25rem
+}
+
+.input__labels{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input__label{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-color-1);
+}
+
+.input__label--error{
+    color: var(--error-color);
+}
+
+.input__input-container{
+    width: 100%;
+    height: 2.5rem;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1rem;
+    border: 2px solid var(--outline-color-1);
+    border-radius: 5px;
+}
+
+.input__input-container:focus-within{
+    border: 2px solid var(--link-color)
+}
+
+.input__input-container--error{
+    border: 2px solid var(--error-color);
+    background-color: rgb(252, 213, 222)
+}
+
+.input__input-itself{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-color-1);
+}
+
+.input__input-container--error .input__input-itself{
+    font-weight: 600;
+    color: var(--error-color);
+}
+
+.input__lock-button{
+    flex-shrink: 0;
+    position: relative;
+    height: 100%;
+    width: 1rem;
+    background-color: transparent;
+}
+
+.input__lock-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-color-1);
+    user-select: none;
+}
+
+.input__input-container--error .input__lock-icon{
+    color: crimson;
+}

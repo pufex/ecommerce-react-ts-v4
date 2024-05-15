@@ -1,0 +1,45 @@
+.dwc-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: var(--element-color-3);
+}
+
+.dwc__header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1rem;
+    border-bottom: 1px solid var(--outline-color-3);
+    user-select: none;
+    cursor: pointer;
+}
+
+.dwc__title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color-1);
+}
+
+.btn--dwc{
+    position: relative;
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+.btn--dwc-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-color-1);
+}
+
+.dwc__content{
+    width: 100%;
+    border-bottom: 1px solid var(--outline-color-3);
+}
+
+

@@ -1,0 +1,41 @@
+.pay-form__product-container{
+    width: 100%;
+    height: 8rem;
+    padding-block: 1rem;
+    border-bottom: 1px solid var(--outline-color-3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.pay-form__product-container--left{
+    height: 100%;
+}
+
+.pay-form__product__image{
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid var(--outline-color-3);
+    background-color: white;
+}
+
+.pay-form__product-container--right{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.pay-form__product__title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-color-1);
+}
+
+.pay-form__product__calculation{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color-1);
+}

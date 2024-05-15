@@ -1,0 +1,96 @@
+.account__main{
+    min-height: calc(100vh - 6rem);
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account__header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.account__heading{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color-1);
+    padding-block: 2rem;
+}
+
+.account__settings-cards{
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.account__settings-section{
+    width: 100%;
+    background-color: var(--element-color-4);
+    padding: 2rem;
+    padding-top: 3rem;
+    border-radius: 5px;
+    border: 1px solid var(--outline-color-3);
+    box-shadow: 5px 5px var(--outline-color-3)
+}
+
+.account__settings-heading{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color-1);
+    margin-bottom: 1.5rem;
+}
+
+.account__settings{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+
+.account__setting{
+    display: flex;
+    align-items: center;
+    gap: 1rem
+}
+
+.account__setting-property{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.account__setting-key,
+.account__setting-value{
+    display: inline-block;
+    font-size: 1.25rem;
+    color: var(--text-color-1);
+}
+
+.account__setting-key{
+    font-weight: 600;
+}
+
+.account__setting-edit{
+    background-color: transparent;
+    position: relative;
+    height: 2.5rem;
+    aspect-ratio: 1;
+}
+
+.account__setting-edit-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--link-color);
+}
+
