@@ -6,7 +6,6 @@ import { useDatabase } from "../../contexts/Database"
 import Search from "../../components/Search/Search"
 import SearchLocation from "../../components/SearchLocation/SearchLocation"
 import PartnersCard from "./components/PartnersCard/PartnersCard"
-import Button from "../../components/Button/Button"
 
 import "./Partners.css"
 
